@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.gmail.luburgosm"
+        versionCode = "1" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Voir</name>
+
+    <description>
+        Una aplicación que hace que veas de una manera más fácil todas tus series favoritas. 
+    </description>
+
+    <author href="https://build.phonegap.com" email="luburgosm@gmail.com">
+        Luisa Burgos, Ginna Chunza, Sara Gómez 
+    </author>
+    <icon src="icon.png" />
+
+</widget>

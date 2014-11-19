@@ -4,14 +4,20 @@
 	<title>Voir</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+	<link rel="stylesheet" href="css/themes/voir.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/owl.theme.css" />
 	<link rel="stylesheet" href="css/owl.transitions.css" />
 	<link rel="stylesheet" href="css/estilo.css" />
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.rawgit.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+  <script id="mobile-datepicker" src="https://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -42,16 +48,16 @@
 	<div role="main" class="ui-content">
     	<h1>Lo más visto</h1>
     	<div id="galeria1" class="owl-carousel">
-		  <div><a href="#lista"><img src="imagenes/twd.jpg" class="imagenAncha"></a></div>
-		  <div><a href="#"><img src="imagenes/ahs.jpg" class="imagenAncha"></a></div>
-		  <div><a href="#"><img src="imagenes/onceuponatime.jpg" class="imagenAncha"></a></div>
-		</div>
-       	<h1>Lo más reciente</h1>
-       	<div id="galeria2" class="owl-carousel">
+  		  <div><a href="#lista"><img src="imagenes/twd.jpg" class="imagenAncha"></a></div>
+  		  <div><a href="#"><img src="imagenes/ahs.jpg" class="imagenAncha"></a></div>
+  		  <div><a href="#"><img src="imagenes/onceuponatime.jpg" class="imagenAncha"></a></div>
+		  </div>
+      <h1>Lo más reciente</h1>
+      <div id="galeria2" class="owl-carousel">
     		<div><a href="#"><img src="imagenes/flash.jpg" class="imagenAncha"></a></div>
-			<div><a href="#"><img src="imagenes/breakingbad.jpg" class="imagenAncha"></a></div>
-			<div><a href="#"><img src="imagenes/gameofthrones.jpg" class="imagenAncha"></a></div>
-		</div>
+			  <div><a href="#"><img src="imagenes/breakingbad.jpg" class="imagenAncha"></a></div>
+			  <div><a href="#"><img src="imagenes/gameofthrones.jpg" class="imagenAncha"></a></div>
+		  </div>
     </div>
 </div>
 
@@ -59,7 +65,7 @@
 <div data-role="page" id="registro">
 	<div data-role="header">
     	<h1>Nuevo usuario</h1>
-    	</div>
+  </div>
     <div role="main" class="ui-content">
     	  <input type="text" name="text-basic" id="text-basic" value="" placeholder="Tu correo">
     	  <input type="text" name="text-basic" id="text-basic" value="" placeholder="Usuario">
@@ -69,19 +75,18 @@
     </div>
 </div>
 
-<!--
-
-</div data-role="page" id="calendario">
+<div data-role="page" id="calendario">
 	<div data-role="header">
-    	<h1>Voir</h1>
-    	<h1>calendario</h1>
-    	<img src="imagenes/twd.jpg">
-       	<input type="text" data-role="date" data-inline="true">
-       	<a href="#lista" class="ui-btn">21</a>
+    	<h1>Calendario</h1>
+	</div>
  	<div role="main" class="ui-content">
-    </div>
+    	<div><a href="#"><img src="imagenes/twd.jpg" class="imagenAncha"></a></div>
+      <input type="text" data-role="date" data-inline="true">
+      <a href="#lista" class="ui-btn">Aceptar</a>
+  </div>
 </div>
--->
+
+
 
 
 <div data-role="page" id="lista">
@@ -108,6 +113,108 @@
 
 
 
+<div data-role="page" id="listatahs">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista American Horror Story</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/ahs.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1: Murder House</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#">1. Pilot</a></li>
+        <li><a href="#">2. Home Invasion</a></li>
+        <li><a href="#">3. Murder House</a></li>
+        <li><a href="#">4. Halloween I </a></li>
+        <li><a href="#">5. Halloween II </a></li>
+        <li><a href="#">6. Piggy Piggy</a></li>
+        <li><a href="#">7. Open House</a></li>
+        <li><a href="#">8. Rubber Man</a></li>
+        <li><a href="#">9. Spooky Little Girl</a></li>
+        <li><a href="#">10. Smoldering Children </a></li>
+        <li><a href="#">11. Birth </a></li>
+        <li><a href="#">12. Afterbirth </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 2: Asylum </h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#">1. Welcome to Briarcliff</a></li>
+        <li><a href="#">2. Tricks and Treats</a></li>
+        <li><a href="#">3. Nor'easter</a></li>
+        <li><a href="#">4. I Am Anne Frank 1</a></li>
+        <li><a href="#">5. I Am Anne Frank 2</a></li>
+        <li><a href="#">6. The Origins of Monstrosity</a></li>
+        <li><a href="#">7. Dark Cousin</a></li>
+        <li><a href="#">8. Unholy Night</a></li>
+        <li><a href="#">9. The Coat Hanger</a></li>
+        <li><a href="#">10. The Name Game</a></li>
+        <li><a href="#">11. Spilt Milk</a></li>
+        <li><a href="#">12. Continuum</a></li>
+        <li><a href="#">13. Madness Ends</a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 3: Coven</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Bitchcraft</a></li>
+      <li><a href="#">2. Boy Parts</a></li>
+      <li><a href="#">3. The Replacements</a></li>
+      <li><a href="#">4. Fearful Pranks Ensue</a></li>
+      <li><a href="#">5. Burn, Witch, Burn!</a></li>
+      <li><a href="#">6. The Axeman Cometh</a></li>
+      <li><a href="#">7. The Dead</a></li>
+      <li><a href="#">8. The Sacred Taking</a></li>
+      <li><a href="#">9. Head</a></li>
+      <li><a href="#">10. The Magical Delights of Stevie Nicks</a></li>
+      <li><a href="#">11. Protect the Coven</a></li>
+      <li><a href="#">12. Go to Hell</a></li>
+      <li><a href="#">13.The Seven Wonders</a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 4: Freak Show</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. 30 Days Without An Accident</a></li>
+      <li><a href="#">2. Infected</a></li>
+      <li><a href="#">3. Isolation</a></li>
+      <li><a href="#">4. Indifference</a></li>
+      <li><a href="#">5. Internment</a></li>
+      <li><a href="#reproductor">6. Live Bait</a></li>
+      <li><a href="#">7. Dead weight</a></li>
+      <li><a href="#">8. Too Far Gone</a></li>
+      <li><a href="#">9. After</a></li>
+      <li><a href="#">10. Inmates</a></li>
+      <li><a href="#">11. Claimed</a></li>
+      <li><a href="#">12. Still</a></li>
+      <li><a href="#">13. Alone</a></li>
+      <li><a href="#">14. The Grove</a></li>
+      <li><a href="#">15. Us</a></li>
+      <li><a href="#">16. A</a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 5</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#">1. No Sanctuary</a></li>
+        <li><a href="#">2. Strangers</a></li>
+        <li><a href="#">3. Four Walls And A Roof</a></li>
+        <li><a href="#">4. Slabtown</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+</div>
+
 <div data-role="page" id="listatwd">
   <div data-role="panel" id="miPanel" data-display="overlay">
       <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
@@ -126,7 +233,7 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
       <h4>Temporada 1</h4>
       <ul data-role="listview" data-theme="b">
-        <li><a href="#">1. Days Gone Bye</a></li>
+        <li><a href="#Reproductor">1. Days Gone Bye</a></li>
         <li><a href="#">2. Guts</a></li>
         <li><a href="#">3. Tell It To The Frogs</a></li>
         <li><a href="#">4. Vatos</a></li>
@@ -181,7 +288,7 @@
       <li><a href="#">3. Isolation</a></li>
       <li><a href="#">4. Indifference</a></li>
       <li><a href="#">5. Internment</a></li>
-      <li><a href="#reproductor">6. Live Bait</a></li>
+      <li><a href="#">6. Live Bait</a></li>
       <li><a href="#">7. Dead weight</a></li>
       <li><a href="#">8. Too Far Gone</a></li>
       <li><a href="#">9. After</a></li>
@@ -206,7 +313,6 @@
     </div>
     </div>
 </div>
-
 
 <div data-role="page" id="cola">
   <div data-role="panel" id="miPanel" data-display="overlay">
@@ -247,42 +353,39 @@
     	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
     	    <h2>Temporada 1</h2>
           	<form>
-              <fieldset data-role="controlgroup">
-                  <legend>Vertical:</legend>
-                  <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
-                  <label for="checkbox-v-2a">One</label>
-                  <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
-                  <label for="checkbox-v-2b">Two</label>
-                  <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
-                  <label for="checkbox-v-2c">Three</label>
+              <fieldset data-role="controlgroup1">
+                  <input type="checkbox" name="checkbox-v-1a" id="checkbox-v-1a">
+                  <label for="checkbox-v-1a">1. Days Gone Bye</label>
+                  <input type="checkbox" name="checkbox-v-1b" id="checkbox-v-1b">
+                  <label for="checkbox-v-1b">2. Guts</label>
+                  <input type="checkbox" name="checkbox-v-1c" id="checkbox-v-1c">
+                  <label for="checkbox-v-1c">3. Tell It To The Frogs</label>
               </fieldset>
           </form>
     	  </div>
     	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
     	  <h2>Temporada 2</h2>
           	<form>
-              <fieldset data-role="controlgroup">
-                  <legend>Vertical:</legend>
+              <fieldset data-role="controlgroup2">
                   <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
-                  <label for="checkbox-v-2a">One</label>
+                  <label for="checkbox-v-2a">1. What Lies Ahead</label>
                   <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
-                  <label for="checkbox-v-2b">Two</label>
+                  <label for="checkbox-v-2b">2. Bloodletting</label>
                   <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
-                  <label for="checkbox-v-2c">Three</label>
+                  <label for="checkbox-v-2c">3. Save The Last One</label>
               </fieldset>
           </form>
     	  </div>
     	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
     	  <h2>Temporada 3</h2>
           	<form>
-              <fieldset data-role="controlgroup">
-                  <legend>Vertical:</legend>
-                  <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
-                  <label for="checkbox-v-2a">One</label>
-                  <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
-                  <label for="checkbox-v-2b">Two</label>
-                  <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
-                  <label for="checkbox-v-2c">Three</label>
+              <fieldset data-role="controlgroup3">
+                  <input type="checkbox" name="checkbox-v-3a" id="checkbox-v-3a">
+                  <label for="checkbox-v-3a">1. Seed</label>
+                  <input type="checkbox" name="checkbox-v-3b" id="checkbox-v-3b">
+                  <label for="checkbox-v-3b">2. Sick</label>
+                  <input type="checkbox" name="checkbox-v-3c" id="checkbox-v-3c">
+                  <label for="checkbox-v-3c">3. Walk With Me</label>
               </fieldset>
           </form>
     	  </div>
@@ -294,13 +397,19 @@
 <!--
 -->
 <div data-role="page" id="Reproductor">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
 	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listatwd" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
     	<h1>Voir</h1>
-            </div>
-	<div role="main" class="ui-content">
-	  <video src="https://ia600504.us.archive.org/4/items/Humorous_Phases_of_Funny_Faces_1906/HumorousPhases06_512kb.mp4" controls>
-      Tu navegador no implementa el elemento <code>video</code>.
-    </video>
+  </div>
+  <div role="main" class="ui-content">
+	 <iframe width="100%" height="360" src="//www.youtube.com/embed/YmFOoNvisno" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
