@@ -54,8 +54,8 @@
 		  </div>
       <h1>Lo más reciente</h1>
       <div id="galeria2" class="owl-carousel">
-    		<div><a href="#"><img src="imagenes/flash.jpg" class="imagenAncha"></a></div>
-			  <div><a href="#"><img src="imagenes/breakingbad.jpg" class="imagenAncha"></a></div>
+    		<div><a href="#listatf"><img src="imagenes/flash.jpg" class="imagenAncha"></a></div>
+			  <div><a href="#listabb"><img src="imagenes/breakingbad.jpg" class="imagenAncha"></a></div>
 			  <div><a href="#"><img src="imagenes/gameofthrones.jpg" class="imagenAncha"></a></div>
 		  </div>
     </div>
@@ -76,7 +76,14 @@
 </div>
 
 <div data-role="page" id="calendario">
+   <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
 	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
     	<h1>Calendario</h1>
 	</div>
  	<div role="main" class="ui-content">
@@ -85,8 +92,6 @@
       <a href="#lista" class="ui-btn">Aceptar</a>
   </div>
 </div>
-
-
 
 
 <div data-role="page" id="lista">
@@ -101,10 +106,12 @@
 	  <h1>Lista</h1>
 	 <ul data-role="listview">
     <li><a href="#listatwd">The Walking Dead</a></li>
-    <li><a href="#">American Horror Story</a></li>
-    <li><a href="#">Breaking Bad</a></li>
-    <li><a href="#">Once Upon A Time</a></li>
-    <li><a href="#">Pretty Little Liars</a></li>
+    <li><a href="#listaahs">American Horror Story</a></li>
+    <li><a href="#listabb">Breaking Bad</a></li>
+    <li><a href="#listaouat">Once Upon A Time</a></li>
+    <li><a href="#listapll">Pretty Little Liars</a></li>
+    <li><a href="#listatf">The Flash</a></li>
+    <li><a href="#listagot">Game of Thrones</a></li>
 </ul>
 	</div>
   	<div role="main" class="ui-content">
@@ -112,8 +119,7 @@
     </div>
 
 
-
-<div data-role="page" id="listatahs">
+<div data-role="page" id="listaahs">
   <div data-role="panel" id="miPanel" data-display="overlay">
       <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
       <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
@@ -131,7 +137,7 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
       <h4>Temporada 1: Murder House</h4>
       <ul data-role="listview" data-theme="b">
-        <li><a href="#">1. Pilot</a></li>
+        <li><a href="#reproductorahs1">1. Pilot</a></li>
         <li><a href="#">2. Home Invasion</a></li>
         <li><a href="#">3. Murder House</a></li>
         <li><a href="#">4. Halloween I </a></li>
@@ -148,7 +154,7 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
       <h4>Temporada 2: Asylum </h4>
       <ul data-role="listview" data-theme="b">
-        <li><a href="#">1. Welcome to Briarcliff</a></li>
+        <li><a href="#reproductorahs2">1. Welcome to Briarcliff</a></li>
         <li><a href="#">2. Tricks and Treats</a></li>
         <li><a href="#">3. Nor'easter</a></li>
         <li><a href="#">4. I Am Anne Frank 1</a></li>
@@ -184,36 +190,21 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
     <h4>Temporada 4: Freak Show</h4>
     <ul data-role="listview" data-theme="b">
-      <li><a href="#">1. 30 Days Without An Accident</a></li>
-      <li><a href="#">2. Infected</a></li>
-      <li><a href="#">3. Isolation</a></li>
-      <li><a href="#">4. Indifference</a></li>
-      <li><a href="#">5. Internment</a></li>
-      <li><a href="#reproductor">6. Live Bait</a></li>
-      <li><a href="#">7. Dead weight</a></li>
-      <li><a href="#">8. Too Far Gone</a></li>
-      <li><a href="#">9. After</a></li>
-      <li><a href="#">10. Inmates</a></li>
-      <li><a href="#">11. Claimed</a></li>
-      <li><a href="#">12. Still</a></li>
-      <li><a href="#">13. Alone</a></li>
-      <li><a href="#">14. The Grove</a></li>
-      <li><a href="#">15. Us</a></li>
-      <li><a href="#">16. A</a></li>
+      <li><a href="#">1. Monsters Among Us</a></li>
+      <li><a href="#">2. Massacres and Matinees</a></li>
+      <li><a href="#">3. Edward Mordrake, Part 1</a></li>
+      <li><a href="#">4. Edward Mordrake, Part 2</a></li>
+      <li><a href="#">5. Pink Cupcakes</a></li>
+      <li><a href="#">6. Bullseye</a></li>
+      <li><a href="#">7. Test of Strength</a></li>
+      <li><a href="#">8. Blood Bath</a></li>
+      <li><a href="#">9. The Fat Lady Sings</a></li>
     </ul>
-    </div>
-    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-      <h4>Temporada 5</h4>
-      <ul data-role="listview" data-theme="b">
-        <li><a href="#">1. No Sanctuary</a></li>
-        <li><a href="#">2. Strangers</a></li>
-        <li><a href="#">3. Four Walls And A Roof</a></li>
-        <li><a href="#">4. Slabtown</a></li>
-      </ul>
     </div>
     </div>
     </div>
 </div>
+
 
 <div data-role="page" id="listatwd">
   <div data-role="panel" id="miPanel" data-display="overlay">
@@ -233,7 +224,7 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
       <h4>Temporada 1</h4>
       <ul data-role="listview" data-theme="b">
-        <li><a href="#Reproductor">1. Days Gone Bye</a></li>
+        <li><a href="#reproductortwd1">1. Days Gone Bye</a></li>
         <li><a href="#">2. Guts</a></li>
         <li><a href="#">3. Tell It To The Frogs</a></li>
         <li><a href="#">4. Vatos</a></li>
@@ -304,7 +295,7 @@
     <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
       <h4>Temporada 5</h4>
       <ul data-role="listview" data-theme="b">
-        <li><a href="#">1. No Sanctuary</a></li>
+        <li><a href="#reproductortwd5">1. No Sanctuary</a></li>
         <li><a href="#">2. Strangers</a></li>
         <li><a href="#">3. Four Walls And A Roof</a></li>
         <li><a href="#">4. Slabtown</a></li>
@@ -313,6 +304,505 @@
     </div>
     </div>
 </div>
+
+
+<div data-role="page" id="listabb">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista Breaking bad</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/breakingbad.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorbb1">1. Pilot</a></li>
+        <li><a href="#">2. The Cat's in the Bag...</a></li>
+        <li><a href="#">3. ... and the Bag's in the River</a></li>
+        <li><a href="#">4. Cancer Man </a></li>
+        <li><a href="#">5. Gray Matter  </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 2 </h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorbb2">1.Seven Thirty-Seven </a></li>
+        <li><a href="#">2. Grilled </a></li>
+        <li><a href="#">3. Bit by a dead bee </a></li>
+        <li><a href="#">4. Down </a></li>
+        <li><a href="#">5. Breakage </a></li>
+        <li><a href="#">6. Peekaboo </a></li>
+        <li><a href="#">7. Negro y azul </a></li>
+        <li><a href="#">8. Better Call Saul </a></li>
+        <li><a href="#">9. 4 days out </a></li>
+        <li><a href="#">10. Over </a></li>
+        <li><a href="#">11. Mandala </a></li>
+        <li><a href="#">12. Phoenix </a></li>
+        <li><a href="#">13. ABQ </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 3</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. No más </a></li>
+      <li><a href="#">2. Caballo sin nombre </a></li>
+      <li><a href="#">3. I.F.T. </a></li>
+      <li><a href="#">4. Green light </a></li>
+      <li><a href="#">5. Más </a></li>
+      <li><a href="#">6. Sunset </a></li>
+      <li><a href="#">7. One Minute</a></li>
+      <li><a href="#">8. I See You </a></li>
+      <li><a href="#">9. Kafkaesque </a></li>
+      <li><a href="#">10. Fly </a></li>
+      <li><a href="#">11. Abiquiu </a></li>
+      <li><a href="#">12. Half Measures </a></li>
+      <li><a href="#">13.Full Measures </a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 4</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Box Cutter </a></li>
+      <li><a href="#">2. Thirty-Eight Snub</a></li>
+      <li><a href="#">3. Open House </a></li>
+      <li><a href="#">4. Bullet Points </a></li>
+      <li><a href="#">5. Shotgun </a></li>
+      <li><a href="#">6. Cornered </a></li>
+      <li><a href="#">7. Problem Dog</a></li>
+      <li><a href="#">8. Hermanos </a></li>
+      <li><a href="#">9. Bug</a></li>
+      <li><a href="#">10. Salud</a></li>
+      <li><a href="#">11. Crawl Space </a></li>
+      <li><a href="#">12. End Times</a></li>
+      <li><a href="#">13. Face off </a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 5</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Live Free or Die  </a></li>
+      <li><a href="#">2. Madrigal </a></li>
+      <li><a href="#">3. Hazard Pay</a></li>
+      <li><a href="#">4. Fifty-one </a></li>
+      <li><a href="#">5. Dead Freight </a></li>
+      <li><a href="#">6. Buyout </a></li>
+      <li><a href="#">7. Say My Name</a></li>
+      <li><a href="#">8. Gliding Over All </a></li>
+      <li><a href="#">9. Blood Money </a></li>
+      <li><a href="#">10. Buried </a></li>
+      <li><a href="#">11. confessions </a></li>
+      <li><a href="#">12. Rabiod dog</a></li>
+      <li><a href="#">13. To'hajiilee</a></li>
+      <li><a href="#">14. Ozymandias </a></li>
+      <li><a href="#">15. Granite State</a></li>
+      <li><a href="#">16. Felina</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="listagot">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista Game of Thrones</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/gameofthrones.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorgot1">1. Winter Is Coming</a></li>
+        <li><a href="#">2. The Kingsroad </a></li>
+        <li><a href="#">3. Lord Snow </a></li>
+        <li><a href="#">4. Cripples, Bastards, and Broken Things </a></li>
+        <li><a href="#">5. The Wolf and the Lion  </a></li>
+        <li><a href="#">6. A Golden Crown </a></li>
+        <li><a href="#">7. You Win or You Die </a></li>
+        <li><a href="#">8. The Pointy End  </a></li>
+        <li><a href="#">9. Baelor  </a></li>
+        <li><a href="#">10. Fire and Blood  </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 2 </h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorgot2">1.The North Remember</a></li>
+        <li><a href="#">2. The Night Lands </a></li>
+        <li><a href="#">3. What Is Dead May Never Die </a></li>
+        <li><a href="#">4. Garden of Bones </a></li>
+        <li><a href="#">5. The Ghost of Harrenhal </a></li>
+        <li><a href="#">6. The Old Gods and the New </a></li>
+        <li><a href="#">7. A Man Without Honor </a></li>
+        <li><a href="#">8. The Prince of Winterfell  </a></li>
+        <li><a href="#">9. Blackwater </a></li>
+        <li><a href="#">10. Valar Morghulis  </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 3</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Valar Dohaeris </a></li>
+      <li><a href="#">2. Dark Wings, Dark Words </a></li>
+      <li><a href="#">3. Walk of Punishment </a></li>
+      <li><a href="#">4. And Now His Watch is Ended </a></li>
+      <li><a href="#">5. Kissed by Fire </a></li>
+      <li><a href="#">6. The Climb  </a></li>
+      <li><a href="#">7. The Bear and the Maiden Fair </a></li>
+      <li><a href="#">8. Second Sons </a></li>
+      <li><a href="#">9. The Rains of Castamere </a></li>
+      <li><a href="#">10. Mhysa </a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 4</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Two Swords </a></li>
+      <li><a href="#">2. The Lion and the Rose </a></li>
+      <li><a href="#">3. Breaker of Chains</a></li>
+      <li><a href="#">4. Oathkeeper </a></li>
+      <li><a href="#">5. First of His Name </a></li>
+      <li><a href="#">6. The Laws of Gods and Men</a></li>
+      <li><a href="#">7. Mockingbird </a></li>
+      <li><a href="#">8. The Mountain and the Viper </a></li>
+      <li><a href="#">9. The Watchers on the Wall </a></li>
+      <li><a href="#">10. The Children </a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="listatf">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista The Flash</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/flash.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductortf">1. Pilot</a></li>
+        <li><a href="#">2. Fastest Man Alive</a></li>
+        <li><a href="#">3. Things You Can't Outrun</a></li>
+        <li><a href="#">4. Going Rogue</a></li>
+        <li><a href="#">5. Plastique</a></li>
+        <li><a href="#">6. The Flash Is Born</a></li>
+        <li><a href="#">7. Power Outage</a></li>
+        <li><a href="#">8. Flash vs. Arrow</a></li>
+        <li><a href="#">9. The Man In The Yellow Suit</a></li>
+      </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="listaouat">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista Once Upon a Time</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/onceuponatime.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorouat1">1. Pilot</a></li>
+        <li><a href="#">2. The Thing You Love Most</a></li>
+        <li><a href="#">3. Snow Falls</a></li>
+        <li><a href="#">4. "The Price of Gold" </a></li>
+        <li><a href="#">5. That Still Small Voice</a></li>
+        <li><a href="#">6. The Shepherd</a></li>
+        <li><a href="#">7. The Heart Is a Lonely Hunter</a></li>
+        <li><a href="#">8. Desperate Souls</a></li>
+        <li><a href="#">9. True North</a></li>
+        <li><a href="#">10. 7:15 A.M. </a></li>
+        <li><a href="#">11. Fruit of the Poisonous Tree </a></li>
+        <li><a href="#">12. Skin Deep </a></li>
+        <li><a href="#">13. What Happened to Frederick</a></li>
+        <li><a href="#">14. Dreamy</a></li>
+        <li><a href="#">15. Red-Handed</a></li>
+        <li><a href="#">16. Heart of Darkness</a></li>
+        <li><a href="#">17. Hat Trick</a></li>
+        <li><a href="#">18. The Stable Boy</a></li>
+        <li><a href="#">19. The Return</a></li>
+        <li><a href="#">20. The Stranger</a></li>
+        <li><a href="#">21. An Apple Red as Blood</a></li>
+        <li><a href="#">22. A Land Without Magic</a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 2</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorouat2">1. Broken</a></li>
+        <li><a href="#">2. We Are Both</a></li>
+        <li><a href="#">3. Lady of the Lake</a></li>
+        <li><a href="#">4. The Crocodile</a></li>
+        <li><a href="#">5. The Doctor</a></li>
+        <li><a href="#">6. Tallahassee</a></li>
+        <li><a href="#">7. Child of the Moon</a></li>
+        <li><a href="#">8. Into the Deep</a></li>
+        <li><a href="#">9. Queen of Hearts</a></li>
+        <li><a href="#">10. The Cricket Game</a></li>
+        <li><a href="#">11. The Outsider</a></li>
+        <li><a href="#">12. In the Name of Brother</a></li>
+        <li><a href="#">13. Tiny</a></li>
+        <li><a href="#">14. Manhattan</a></li>
+        <li><a href="#">15. The Queen is Dead</a></li>
+        <li><a href="#">16. The Miller's Daughter</a></li>
+        <li><a href="#">17. Welcome to Storybrooke</a></li>
+        <li><a href="#">18. Selfless, Brave and True</a></li>
+        <li><a href="#">19. Lacey</a></li>
+        <li><a href="#">20. The Evil Queen</a></li>
+        <li><a href="#">21. Second Star to the Right</a></li>
+        <li><a href="#">22. And Straight on 'Til Morning</a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 3</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. The Heart of the Truest Believer</a></li>
+      <li><a href="#">2. Lost Girl</a></li>
+      <li><a href="#">3. Quite a Common Fairy</a></li>
+      <li><a href="#">4. Nasty Habits</a></li>
+      <li><a href="#">5. Good Form</a></li>
+      <li><a href="#">6. Ariel</a></li>
+      <li><a href="#">7. Dark Hollow</a></li>
+      <li><a href="#">8. Think Lovely Thoughts</a></li>
+      <li><a href="#">9. Save Henry</a></li>
+      <li><a href="#">10. The New Neverland</a></li>
+      <li><a href="#">11. Going Home</a></li>
+      <li><a href="#">12. New York City Serenade</a></li>
+      <li><a href="#">13. Witch Hunt</a></li>
+      <li><a href="#">14. The Tower</a></li>
+      <li><a href="#">15. Quiet Minds</a></li>
+      <li><a href="#">16. It's Not Easy Being Green</a></li>
+      <li><a href="#">17. The Jolly Roger</a></li>
+      <li><a href="#">18. Bleeding Through</a></li>
+      <li><a href="#">19. A Curious Thing</a></li>
+      <li><a href="#">20. Kansas</a></li>
+      <li><a href="#">21. Snow Drifts</a></li>
+      <li><a href="#">22. There's No Place Like Home</a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 4</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. A Tale of Two Sisters</a></li>
+      <li><a href="#">2. White Out</a></li>
+      <li><a href="#">3. Rocky Road</a></li>
+      <li><a href="#">4. The Apprentice</a></li>
+      <li><a href="#">5. Breaking Glass</a></li>
+      <li><a href="#">6. Family Business</a></li>
+      <li><a href="#">7. The Snow Queen</a></li>
+      <li><a href="#">8. Smash the Mirror</a></li>
+      <li><a href="#">9. Fall</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="listapll">
+  <div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <h1>Lista Pretty Little Liars</h1>
+	</div>
+  	<div role="main" class="ui-content">
+    	<img src="imagenes/pll.jpg" class="imagenAncha">
+    	<a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Agregar "En cola"</a>
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 1</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorpll1">1. Pilot</a></li>
+        <li><a href="#">2. The Jenna Thing</a></li>
+        <li><a href="#">3. To Kill a Mocking Girl </a></li>
+        <li><a href="#">4. Can You Hear Me Now?</a></li>
+        <li><a href="#">5. Reality Bites Me</a></li>
+        <li><a href="#">6. There's No Place Like Homecoming</a></li>
+        <li><a href="#">7. The Homecoming Hangover</a></li>
+        <li><a href="#">8. Please Do Talk About Me When I'm Gone</a></li>
+        <li><a href="#">9. The Perfect Storm</a></li>
+        <li><a href="#">10. Keep Your Friends Close</a></li>
+        <li><a href="#">11. Moments Later</a></li>
+        <li><a href="#">12. Salt Meets Wound</a></li>
+        <li><a href="#">13. Know Your Frenemies</a></li>
+        <li><a href="#">14. Careful What U Wish 4</a></li>
+        <li><a href="#">15. If At First You Don't Suceed, Lie, Lie Again</a></li>
+        <li><a href="#">16. Je Suis Une Amie</a></li>
+        <li><a href="#">17. The New Normal </a></li>
+        <li><a href="#">18. The Badass Seed </a></li>
+        <li><a href="#">19. A Person of Interest </a></li>
+        <li><a href="#">20. Someone to Watch Over Me</a></li>
+        <li><a href="#">21. Monsters in the End</a></li>
+        <li><a href="#">22. For Whom the Bell Tolls</a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Temporada 2</h4>
+      <ul data-role="listview" data-theme="b">
+        <li><a href="#reproductorpll2">1. It's Alive</a></li>
+        <li><a href="#">2. The Goodbye Look</a></li>
+        <li><a href="#">3. My Name Is Trouble</a></li>
+        <li><a href="#">4. Blind Dates</a></li>
+        <li><a href="#">5. The Devil You Know</a></li>
+        <li><a href="#">6. Never Letting Go</a></li>
+        <li><a href="#">7. Surface Tension</a></li>
+        <li><a href="#">8. Save The Date</a></li>
+        <li><a href="#">9. Picture This</a></li>
+        <li><a href="#">10. Touched by an 'A'-ngel</a></li>
+        <li><a href="#">11. I Must Confess</a></li>
+        <li><a href="#">12. Over My Dead Body</a></li>
+        <li><a href="#">13. The First Secret</a></li>
+        <li><a href="#">14. Through Many Dangers, Toils and Snares</a></li>
+        <li><a href="#">15. A Hot Piece of 'A'</a></li>
+        <li><a href="#">16. Let the Water Hold Me Down</a></li>
+        <li><a href="#">17. The Blond Leading the Blind</a></li>
+        <li><a href="#">18. A Kiss Before Lying</a></li>
+        <li><a href="#">19. The Naked Truth</a></li>
+        <li><a href="#">20. CTRL:A</a></li>
+        <li><a href="#">21. Breaking the Code</a></li>
+        <li><a href="#">22. Father Knows Best</a></li>
+        <li><a href="#">23. Eye of the Beholder</a></li>
+        <li><a href="#">24. If These Dolls Could Talk</a></li>
+        <li><a href="#">25. UnmAsked </a></li>
+      </ul>
+      </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 3</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. It Happened 'That Night'</a></li>
+      <li><a href="#">2. Blood is the New Black</a></li>
+      <li><a href="#">3. Quite a Common Fairy</a></li>
+      <li><a href="#">4. Nasty Habits</a></li>
+      <li><a href="#">5. Good Form</a></li>
+      <li><a href="#">6. The Remains of the 'A'</a></li>
+      <li><a href="#">7. Crazy</a></li>
+      <li><a href="#">8. Stolen Kisses </a></li>
+      <li><a href="#">9. The Kahn Game </a></li>
+      <li><a href="#">10. What Lies Beneath </a></li>
+      <li><a href="#">11. Single Fright Female</a></li>
+      <li><a href="#">12. The Lady Killer</a></li>
+      <li><a href="#">13. This is a Dark Ride</a></li>
+      <li><a href="#">14. She's Better Now</a></li>
+      <li><a href="#">15. Mona-Mania</a></li>
+      <li><a href="#">16. Misery Loves Company</a></li>
+      <li><a href="#">17. Out of the Frying Pan, Into the Inferno</a></li>
+      <li><a href="#">18. Dead to Me</a></li>
+      <li><a href="#">19. What Becomes Of The Broken-Hearted</a></li>
+      <li><a href="#">20. Hot Water</a></li>
+      <li><a href="#">21. Out of Sight, Out of Mind</a></li>
+      <li><a href="#">22. Will The Circle Be Unbroken?</a></li>
+      <li><a href="#">23. I'm Your Puppet</a></li>
+      <li><a href="#">24. A Dangerous Game</a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 4</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. 'A' is for A-l-i-v-e </a></li>
+      <li><a href="#">2. Turn of the Shoe</a></li>
+      <li><a href="#">3. Cat's Cradle</a></li>
+      <li><a href="#">4. Face Time</a></li>
+      <li><a href="#">5. Gamma Zeta Die!</a></li>
+      <li><a href="#">6. Under the Gun</a></li>
+      <li><a href="#">7. Crash and Burn, Girl!</a></li>
+      <li><a href="#">8. The Guilty Girl's Handbook</a></li>
+      <li><a href="#">9. Into the Deep</a></li>
+      <li><a href="#">10. The Mirror Has Three Faces</a></li>
+      <li><a href="#">11. Bring Down the Hoe</a></li>
+      <li><a href="#">12. Now You See Me, Now You Don't</a></li>
+      <li><a href="#">13. Grave New World</a></li>
+      <li><a href="#">14. Who's in the Box?</a></li>
+      <li><a href="#">15. Love Shack, Baby</a></li>
+      <li><a href="#">16. Close Encounters</a></li>
+      <li><a href="#">17. Bite Your Tongue</a></li>
+      <li><a href="#">18. Hot For Teacher</a></li>
+      <li><a href="#">19. Shadow Play</a></li>
+      <li><a href="#">20. Free Fall</a></li>
+      <li><a href="#">21. She's Come Undone</a></li>
+      <li><a href="#">22. Cover For Me</a></li>
+      <li><a href="#">23. Unbridled</a></li>
+      <li><a href="#">24. A is for Answers</a></li>
+    </ul>
+    </div>
+    <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Temporada 5</h4>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">1. Escape From New York</a></li>
+      <li><a href="#">2. Whirly Girlie</a></li>
+      <li><a href="#">3. Surfing the Aftershocks</a></li>
+      <li><a href="#">4. Thrown From the Ride</a></li>
+      <li><a href="#">5. Miss Me x 100</a></li>
+      <li><a href="#">6. Run, Ali, Run</a></li>
+      <li><a href="#">7. The Silence of E. Lamb</a></li>
+      <li><a href="#">8. Scream for Me</a></li>
+      <li><a href="#">9. March of Crimes</a></li>
+      <li><a href="#">10. A Dark Ali</a></li>
+      <li><a href="#">11. No One Here Can Love or Understand Me</a></li>
+      <li><a href="#">12. Taking This One to the Grave</a></li>
+      <li><a href="#">13. How the 'A' Stole Christmas</a></li>
+      <li><a href="#">14. Through a Glass, Darkly</a></li>
+      <li><a href="#">15. Fresh Meat</a></li>
+      <li><a href="#">16. Over a Barrel</a></li>
+      <li><a href="#">17. The Bin of Sin</a></li>
+      <li><a href="#">18. Oh, What Hard Luck Stories They All Hand Me</a></li>
+      <li><a href="#">19. Out, Damned Spot</a></li>
+      <li><a href="#">20. Pretty isn't the Point</a></li>
+      <li><a href="#">21. Bloody Hell</a></li>
+      <li><a href="#">22. The melody Lingers on</a></li>
+      <li><a href="#">23. I´m a good girl, I am</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</div>
+
+
 
 <div data-role="page" id="cola">
   <div data-role="panel" id="miPanel" data-display="overlay">
@@ -326,10 +816,11 @@
 	  <h1>En cola</h1>
 	  <ul data-role="listview">
     <li><a href="#colatwd">The Walking Dead</a></li>
-    <li><a href="#">American Horror Story</a></li>
-    <li><a href="#">Breaking Bad</a></li>
-    <li><a href="#">Once Upon A Time</a></li>
-    <li><a href="#">Pretty Little Liars</a></li>
+    <li><a href="#colaahs">American Horror Story</a></li>
+    <li><a href="#colabb">Breaking Bad</a></li>
+    <li><a href="#colapll">Pretty Little Liars</a></li>
+    <li><a href="#colatf">The Flash</a></li>
+    <li><a href="#colagot">Game of Thrones</a></li>
 </ul>
 	</div>
   	<div role="main" class="ui-content">
@@ -394,9 +885,184 @@
 </div>
 
 
+<div data-role="page" id="colatf">
+<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div>
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	<h1>En cola The Flash</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    	    <h2>Temporada 1</h2>
+          	<form>
+              <fieldset data-role="controlgrouptf1">
+                  <input type="checkbox" name="checkbox-v-tf1a" id="checkbox-v-tf1a">
+                  <label for="checkbox-v-tf1a">1. Pilot</label>
+                  <input type="checkbox" name="checkbox-v-tf1b" id="checkbox-v-tf1b">
+                  <label for="checkbox-v-tf1b">2. Fastest Man Alive</label>
+                  <input type="checkbox" name="checkbox-v-tf1c" id="checkbox-v-tf1c">
+                  <label for="checkbox-v-tf1c">3. Things You Can't Outrun</label>
+                  <input type="checkbox" name="checkbox-v-tf1d" id="checkbox-v-tf1d">
+                  <label for="checkbox-v-tf1d">4. Going Rogue</label>
+                  <input type="checkbox" name="checkbox-v-tf1e" id="checkbox-v-tf1e">
+                  <label for="checkbox-v-tf1e">5. Plastique</label>
+                  <input type="checkbox" name="checkbox-v-tf1f" id="checkbox-v-tf1f">
+                  <label for="checkbox-v-tf1f">6. The Flash Is Born</label>
+                  <input type="checkbox" name="checkbox-v-tf1g" id="checkbox-v-tf1g">
+                  <label for="checkbox-v-tf1g">7. Power Outage</label>
+                  <input type="checkbox" name="checkbox-v-tf1h" id="checkbox-v-tf1h">
+                  <label for="checkbox-v-tf1h">8. Flash vs. Arrow</label>
+                  <input type="checkbox" name="checkbox-v-tf1i" id="checkbox-v-tf1i">
+                  <label for="checkbox-v-tf1i">9. The Man In The Yellow Suit</label>
+              </fieldset>
+          </form>
+    	  </div>
+    	  </div>
+    	</div>
+  	</div>
+  	
+  	
+  <div data-role="page" id="colagot">
+<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div>
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	<h1>En cola Game of Thrones</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    	    <h2>Temporada 4</h2>
+          	<form>
+              <fieldset data-role="controlgroupgot1">
+                  <input type="checkbox" name="checkbox-v-got1a" id="checkbox-v-got1a">
+                  <label for="checkbox-v-got1a">1. Two Swords e</label>
+                  <input type="checkbox" name="checkbox-v-got1b" id="checkbox-v-got1b">
+                  <label for="checkbox-v-got1b">2. The Lion and the Rose </label>
+                  <input type="checkbox" name="checkbox-v-got1c" id="checkbox-v-got1c">
+                  <label for="checkbox-v-got1c">3. Breaker of Chains </label>
+              </fieldset>
+          </form>
+    	  </div>
+    	</div>
+    </div>
+  </div>
+  <div data-role="page" id="colapll">
+<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div>
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	<h1>En cola Pretty Little Liars</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    	    <h2>Temporada 3</h2>
+          	<form>
+              <fieldset data-role="controlgrouppll1">
+                  <input type="checkbox" name="checkbox-v-pll1a" id="checkbox-v-pll1a">
+                  <label for="checkbox-v-pll1a">1. It Happened 'That Night' </label>
+                  <input type="checkbox" name="checkbox-v-pll1b" id="checkbox-v-pll1b">
+                  <label for="checkbox-v-pll1b">2. Blood is the New Black </label>
+                  <input type="checkbox" name="checkbox-v-pll1c" id="checkbox-v-pll1c">
+                  <label for="checkbox-v-pll1c">3. Quite a Common Fairy </label>
+              </fieldset>
+          </form>
+    	  </div>
+  	  </div>
+	  </div>
+  </div>
+  	
+  	
+  	<div data-role="page" id="colaahs">
+<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div>
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	<h1>En cola American Horror Story</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    	    <h2>Temporada 2: Asylum</h2>
+          	<form>
+              <fieldset data-role="controlgroupahs1">
+                  <input type="checkbox" name="checkbox-v-ahs1a" id="checkbox-v-ahs1a">
+                  <label for="checkbox-v-ahs1a">1. Welcome To Briarcliff</label>
+                  <input type="checkbox" name="checkbox-v-ahs1b" id="checkbox-v-ahs1b">
+                  <label for="checkbox-v-ahs1b">2. Tricks And Treats</label>
+                  <input type="checkbox" name="checkbox-v-ahs1c" id="checkbox-v-ahs1c">
+                  <label for="checkbox-v-ahs1c">3. Nor'easter</label>
+                  <input type="checkbox" name="checkbox-v-ahs1d" id="checkbox-v-ahs1d">
+                  <label for="checkbox-v-ahs1d">4. I Am Anne Frank-Part 1</label>
+                  <input type="checkbox" name="checkbox-v-ahs1e" id="checkbox-v-ahs1e">
+                  <label for="checkbox-v-ahs1e">5. I Am Anne Frank-Part 2</label>
+              </fieldset>
+          </form>
+    	  </div>
+  	  </div>
+	  </div>
+  </div>
+    	  
+    	  
+<div data-role="page" id="colabb">
+<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div>
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	<h1>En cola Breaking Bad</h1>
+	</div>
+	<div role="main" class="ui-content">
+    	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    	  <div data-role="collapsible" data-iconpos="right" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    	    <h2>Temporada 1</h2>
+          	<form>
+              <fieldset data-role="controlgroupbb1">
+                  <input type="checkbox" name="checkbox-v-bb1a" id="checkbox-v-bb1a">
+                  <label for="checkbox-v-bb1a">1. Pilot</label>
+                  <input type="checkbox" name="checkbox-v-bb1b" id="checkbox-v-bb1b">
+                  <label for="checkbox-v-bb1b">2. The Cat's in the Bag...</label>
+                  <input type="checkbox" name="checkbox-v-1c" id="checkbox-v-bb1c">
+                  <label for="checkbox-v-bb1c">3. ... and the Bag's in the River</label>
+                   <input type="checkbox" name="checkbox-v-3d" id="checkbox-v-3d">
+                  <label for="checkbox-v-bb3d">4. Cancer Man</label>
+                  <input type="checkbox" name="checkbox-v-bb3e" id="checkbox-v-bb3e">
+                  <label for="checkbox-v-bb3e">5. Gray Matter</label>
+                  <input type="checkbox" name="checkbox-v-bb3f" id="checkbox-v-bb3f">
+                  <label for="checkbox-v-bb3f">6. Crazy Handful of Nothin'</label>
+              </fieldset>
+          </form>
+    	  </div>
+    	</div>
+  	</div>
+</div>
+  	
+
 <!--
 -->
-<div data-role="page" id="Reproductor">
+<div data-role="page" id="reproductortwd1">
 	<div data-role="panel" id="miPanel" data-display="overlay">
       <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
       <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
@@ -409,7 +1075,223 @@
     	<h1>Voir</h1>
   </div>
   <div role="main" class="ui-content">
-	 <iframe width="100%" height="360" src="//www.youtube.com/embed/YmFOoNvisno" frameborder="0" allowfullscreen></iframe>
+	 <iframe width="100%" height="315" src="//www.youtube.com/embed/R1v0uFms68U" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductortwd5">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listatwd" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+	<iframe width="100%" height="315" src="//www.youtube.com/embed/YmFOoNvisno" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorahs1">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listaahs" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+	<iframe width="100%" height="315" src="//www.youtube.com/embed/btjPaI8qOSY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorahs2">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listaahs" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/AuI0HdH4A70" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductortf">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listatf" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/ab18kGh22Mo" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorbb1">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listabb" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/HhesaQXLuRY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorbb2">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listabb" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/QBeeJK0OTrQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorouat1">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listaouat" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/L52woeVxxeU" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorouat2">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listaouat" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/KDccF8OlO8o" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorgot1">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listagot" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/LIU6iJcxFbM" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorgot2">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listagot" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/XuKfFzk1uQs" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorpll1">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listapll" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/3ngpax5Hn7w" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div data-role="page" id="reproductorpll2">
+	<div data-role="panel" id="miPanel" data-display="overlay">
+      <a href="#cola" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check">En cola</a>
+      <a href="#lista" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">Mis series</a>
+      <a href="#calendario" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Mi calendario</a>
+      <a href="#inicial" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-power">Cerrar sesión</a>
+  </div><!-- /panel -->
+	<div data-role="header">
+	  <a href="#miPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Panel</a>
+	  <a href="#listapll" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+    	<h1>Voir</h1>
+  </div>
+  <div role="main" class="ui-content">
+  <iframe width="100%" height="315" src="//www.youtube.com/embed/Nw0T8XEIbPk" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
